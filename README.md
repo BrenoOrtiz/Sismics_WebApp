@@ -26,8 +26,6 @@ Siga os passos abaixo para configurar e rodar tanto o backend quanto o frontend 
 
     ```bash
     npm install
-    # ou
-    # yarn install
     ```
 
 3.  **Configure as variáveis de ambiente:**
@@ -37,8 +35,6 @@ Siga os passos abaixo para configurar e rodar tanto o backend quanto o frontend 
 4.  **Inicie o servidor backend:**
     ```bash
     npm start
-    # ou
-    # yarn start
     # ou o comando específico para iniciar seu servidor backend
     ```
     O servidor backend deverá estar rodando na porta especificada nas configurações (ex: `http://localhost:3000`).
@@ -56,8 +52,6 @@ Siga os passos abaixo para configurar e rodar tanto o backend quanto o frontend 
 
     ```bash
     npm install
-    # ou
-    # yarn install
     ```
 
 3.  **Configure as variáveis de ambiente (se necessário):**
@@ -66,8 +60,6 @@ Siga os passos abaixo para configurar e rodar tanto o backend quanto o frontend 
 
 4.  **Inicie o servidor de desenvolvimento do frontend:**
     ```bash
-    npm start
-    # ou
-    # yarn start
+    npm run dev
     ```
     A aplicação frontend deverá estar acessível no seu navegador, geralmente em `http://localhost:3000` ou outra porta similar.
