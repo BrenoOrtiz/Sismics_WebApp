@@ -5,7 +5,7 @@
 Para clonar este repositório para a sua máquina local, utilize o seguinte comando:
 
 ```bash
-git clone <https://github.com/BrenoOrtiz/Sismics_WebApp.git>
+git clone https://github.com/BrenoOrtiz/Sismics_WebApp.git
 cd Sismics_WebApp
 ```
 
