@@ -1,0 +1,12 @@
+
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100vh;
+  padding: 0 18px;
+  background-color: var(--primary);
+  border-right: 1px solid var(--border);
+  padding-top: 36px;
+}
+

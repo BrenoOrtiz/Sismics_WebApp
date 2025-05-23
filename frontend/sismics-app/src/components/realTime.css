@@ -1,0 +1,22 @@
+.realTimeContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.itemContainer{
+    display: flex;
+}
+
+.itemName{
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-right: auto;
+}
+
+.Title{
+    font-size: 24px;
+    color: var(--text);
+}
+

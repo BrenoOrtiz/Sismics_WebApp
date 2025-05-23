@@ -1,0 +1,21 @@
+.mainSearchBarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.mainSearchInput{
+    height: 45px;
+    width: 40%;
+    border: 1px solid #505050;
+    border-radius: 6px;
+    padding: 0 12px;
+    background-color: transparent;
+    color: var(--text);
+}
+
+.mainSearchInput:focus{
+    outline: none;
+    border: 1px solid var(--accent);
+}
