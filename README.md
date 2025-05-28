@@ -9,12 +9,14 @@ Todos os terremotos na última hora:
 https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson
 ```
 ### Último Dia (Past Day):
+Todos os terremotos no último dia:
 ```GET
-Todos os terremotos no último dia: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson
+ https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson
 ```
 ### Últimos 7 Dias (Past 7 Days):
+Todos os terremotos nos últimos 7 dias:
 ```GET
-Todos os terremotos nos últimos 7 dias: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
+ https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
 ```
 ## Clonando o Repositório
 
