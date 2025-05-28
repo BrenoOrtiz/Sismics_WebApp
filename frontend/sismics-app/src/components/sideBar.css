@@ -2,7 +2,7 @@
 .sidebarContainer {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 210px;
   height: 100vh;
   padding: 0 18px;
   background-color: var(--primary);
