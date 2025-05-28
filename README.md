@@ -1,5 +1,21 @@
 # Sismics_WebApp
 
+## Chamadas de API
+
+### Última Hora (Past Hour):
+
+Todos os terremotos na última hora: 
+```GET
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson
+```
+### Último Dia (Past Day):
+```GET
+Todos os terremotos no último dia: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson
+```
+### Últimos 7 Dias (Past 7 Days):
+```GET
+Todos os terremotos nos últimos 7 dias: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
+```
 ## Clonando o Repositório
 
 Para clonar este repositório para a sua máquina local, utilize o seguinte comando:
