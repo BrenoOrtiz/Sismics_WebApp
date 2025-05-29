@@ -4,20 +4,19 @@ import "./globe.css"
 
 import { useEffect, useRef, useState } from 'react';
 
-export default function GlobeComponent({ seismicEvents }) { 
+export default function GlobeComponent({ seismicEvents, pointsData }) { 
 
     const globeEl = useRef();
     const [GlobeModule, setGlobeModule] = useState(null);
 
     useEffect(() => {
-        // Dynamically import globe.gl only on the client side
         import('globe.gl').then(module => {
-            setGlobeModule(() => module.default); // Assuming Globe is the default export
+            setGlobeModule(() => module.default); 
         });
-    }, []); // Empty dependency array ensures this runs once on mount
+    }, []); 
 
+    // Inicializar o GLOBO
     useEffect(() => {
-        // Initialize globe only after the Globe library is loaded and globeEl is available
         if (globeEl.current && GlobeModule) {
             const currentElement = globeEl.current;
             const containerWidth = currentElement.offsetWidth;
@@ -27,19 +26,33 @@ export default function GlobeComponent({ seismicEvents }) {
                 .height(700)
                 .globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg') 
                 .backgroundColor('#22252a')
-                .pointsData([ 
-                // Implementar seismicEvents aqui
-                    { lat: -23.5505, lng: -46.6333, size: 0.3, color: 'red', name: 'São Paulo' },
-                    { lat: 35.6895, lng: 139.6917, size: 0.3, color: 'blue', name: 'Tokyo' }
-                ])
-                .pointLabel('name')
+                .pointsData(seismicEvents.map(event => ({
+                    id: event.id,
+                    name: event.place,
+                    magnitude: event.magnitude, 
+                    time: event.time,
+                    size: Math.max(event.magnitude / 15, 0.1),
+                    lat: event.lat,
+                    lng: event.lng,
+                    alert: event.alert,
+                    color: event.magnitude > 5 ? '#ff0000' : (event.magnitude > 3 ? '#ffa500' : '#00ff00')
+                })))
+                .pointLabel(d => `
+                    <div><b>Local:</b> ${d.name}</div>
+                    <div><b>Magnitude:</b> ${d.magnitude}</div>
+                    <div><b>Horário:</b> ${new Date(d.time).toLocaleString()}</div>
+                    <div><b>Latitude:</b> ${d.lat}</div>
+                    <div><b>Longitude:</b> ${d.lng}</div>
+                    ` 
+                )
                 .pointAltitude('size')
                 .pointColor('color');
 
-            myGlobe.pointOfView({ lat: 0, lng: 0, altitude: 2.5 });
+            myGlobe.pointOfView(pointsData);
         }
-    }, [GlobeModule, globeEl]);
+    }, [GlobeModule, globeEl, seismicEvents, pointsData]);
 
+    
     return (
         <div ref={globeEl} style={{ flexGrow: 1, width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             {!GlobeModule && <p className='loading-text'>Carregando globo...</p>} 
