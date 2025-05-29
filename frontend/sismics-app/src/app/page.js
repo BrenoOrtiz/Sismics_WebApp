@@ -42,7 +42,6 @@ export default function Home() {
       }
       
     };
-
     fetchSeismicEvents();
 
    }, [])
@@ -50,7 +49,6 @@ export default function Home() {
 
   return (
     <div>
-      
       <NavBar />
       <div className="content-container">
         {loading ? (
