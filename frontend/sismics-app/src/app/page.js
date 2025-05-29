@@ -44,6 +44,7 @@ export default function Home() {
     };
 
     fetchSeismicEvents();
+
    }, [])
 
 
@@ -52,8 +53,15 @@ export default function Home() {
       
       <NavBar />
       <div className="content-container">
-        <Sidebar seismicEvents={seismicEvents}/>
-        <MainContent seismicEvents={seismicEvents} />
+        {loading ? (
+          <div className="loading-div"></div>
+        ): (
+            <>
+            <Sidebar seismicEvents={seismicEvents}/>
+            <MainContent seismicEvents={seismicEvents} />
+           </> 
+        ) }
+        
       </div>
 
     </div>
