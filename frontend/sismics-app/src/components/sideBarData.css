@@ -1,8 +1,9 @@
-.realTimeContainer{
+.SideBarDataContainer{
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 16px;
+    margin-top: 12px;
+    gap: 24px;
 }
 
 .itemContainer{
@@ -10,9 +11,14 @@
 }
 
 .itemName{
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-secondary);
     margin-right: auto;
+}
+
+.itemName:hover{
+    color: var(--text);
+    cursor: pointer;
 }
 
 .Title{
