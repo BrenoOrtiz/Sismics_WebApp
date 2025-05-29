@@ -2,15 +2,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 .mainSearchInput{
     height: 45px;
-    width: 30%;
+    width: 100%;
+    padding: 12px 20px;
     border: 1px solid #505050;
-    border-radius: 6px;
-    padding: 0 12px;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    font-size: 16px;
     margin-top: 12px;
     background-color: transparent;
     color: var(--text);
@@ -18,5 +23,51 @@
 
 .mainSearchInput:focus{
     outline: none;
-    border: 1px solid var(--accent);
+    border-color: var(--accent);
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 100%; /* Posiciona logo abaixo do input */
+    left: 0;
+    right: 0; 
+    background-color: var(--primary-300);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1000; 
+    max-height: 200px; 
+    overflow-y: auto; 
+
+    /* Estilização da barra de rolagem para WebKit (Chrome, Safari, Edge) */
+    &::-webkit-scrollbar {
+        width: 8px; /* Largura da barra de rolagem */
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--primary-300); /* Cor do fundo da trilha da barra de rolagem */
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--primary); /* Cor do "polegar" da barra de rolagem */
+        border-radius: 1px;
+    }
+
+    /* Estilização da barra de rolagem para Firefox */
+    scrollbar-width: thin; /* Pode ser 'auto', 'thin', ou 'none' */
+    scrollbar-color: var(--primary) var(--primary-300)
+}
+
+.suggestion-item {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: var(--primary-400);
 }
