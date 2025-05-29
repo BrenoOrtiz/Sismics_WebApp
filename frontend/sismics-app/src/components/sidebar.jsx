@@ -1,13 +1,17 @@
 import "./sideBar.css"
-import RealTime from "../components/realTime"
+import SideBarData from "../components/SideBarData"
 import SearchBarSide from "./searchBarSide";
 
-export default function Sidebar({seismicEvents }) {
+import { useState } from "react";
+
+export default function Sidebar({seismicEvents}) {
+
+    const [searchPlace, setSearchPlace] = useState("")
 
     return (
         <div className="sidebarContainer">
-            <SearchBarSide/>
-            <RealTime data={seismicEvents} />
+            <SearchBarSide handleSearch={setSearchPlace} searchValue={searchPlace} />
+            <SideBarData data={seismicEvents} searchString={searchPlace} />
         </div>
     );
  }
