@@ -17,7 +17,13 @@ Todos os terremotos no último dia:
 Todos os terremotos nos últimos 7 dias:
 ```GET
  https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
+
 ```
+## Todos os terremotos nos últimos 30 dias:
+```GET
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson
+```
+
 ## Clonando o Repositório
 
 Para clonar este repositório para a sua máquina local, utilize o seguinte comando:
