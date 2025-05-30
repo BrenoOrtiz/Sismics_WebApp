@@ -23,7 +23,7 @@ export default function GlobeComponent({ seismicEvents, pointsData }) {
 
             const myGlobe = new GlobeModule()(currentElement)
                 .width(containerWidth)
-                .height(700)
+                .height(500)
                 .globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg') 
                 .backgroundColor('#22252a')
                 .pointsData(seismicEvents.map(event => ({
