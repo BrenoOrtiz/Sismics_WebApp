@@ -15,7 +15,7 @@ async function initializeDatabase() {
         console.log("Connected to MySQL database");
     } catch (err) {
         console.error("Error connecting to database:", err);
-        process.exit(1); // Exit if database connection fails
+        process.exit(1); 
     }
 }
 
@@ -25,8 +25,7 @@ function getDb() {
         console.error(
             "Database has not been initialized. Call initializeDatabase first."
         );
-        // Optionally, you could throw an error here or handle it as appropriate
-        // throw new Error("Database not initialized.");
+        
     }
     return db;
 }
