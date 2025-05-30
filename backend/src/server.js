@@ -14,7 +14,7 @@ app.use(express.json());
 // All routes defined in api.js will be prefixed with /api
 app.use("/api", apiRouter);
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 5000;
 
 // Initialize database and then start the server
 initializeDatabase()
