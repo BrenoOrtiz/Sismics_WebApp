@@ -33,8 +33,7 @@ export default function MainContent() {
           lng: element.longitude, 
           lat: element.latitude,  
           alert: element.alert,
-          depth: element.dmin, 
-          tsunami: element.tsunami, 
+          tsunami: element.tsunami
     
         }))
         
