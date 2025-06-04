@@ -26,7 +26,7 @@ export default function Sidebar() {
           lng: element.geometry.coordinates[0],
           lat: element.geometry.coordinates[1],  
           alert: element.properties.alert,
-          depth: element.properties.dmin,
+          depth: element.geometry.depth,
           tsunami: element.properties.tsunami, 
   
         }))
