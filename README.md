@@ -23,6 +23,10 @@ Todos os terremotos nos últimos 7 dias:
 ```GET
 https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson
 ```
+## Consultar terremoto por id:
+```GET
+https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=ID
+```
 
 ## Clonando o Repositório
 
