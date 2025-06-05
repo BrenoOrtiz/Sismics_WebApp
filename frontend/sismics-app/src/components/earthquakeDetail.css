@@ -1,0 +1,38 @@
+.earthquake-details-container{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary);
+    margin-top: 18px;
+}
+
+.detail-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.detail-row:last-child{
+    border-bottom: none;
+}
+
+.detail-item{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.detail-title{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.detail-value{
+    font-size: 16px;
+    color: var(--text-secondary);
+}
