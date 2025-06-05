@@ -10,10 +10,15 @@
     display: flex;
 }
 
+.itemLink{
+    text-decoration: none;
+}
+
 .itemName{
     font-size: 16px;
     color: var(--text-secondary);
     margin-right: auto;
+    text-decoration: none;
 }
 
 .itemName:hover{
@@ -25,4 +30,5 @@
     font-size: 24px;
     color: var(--text);
 }
+
 
