@@ -1,7 +1,7 @@
 "use client"
 
 import "./SideBarData.css";
-
+import Link from "next/link";
 
 export default function SideBarData(props) {
 
@@ -24,7 +24,10 @@ export default function SideBarData(props) {
                 }
                 return (
                     <div key={item.id} className="itemContainer">
-                        <div className="itemName">{item.place}</div>
+                        <Link className="itemLink" href={`/details/${item.id}`} passHref>
+                            <div className="itemName">{item.place}</div>
+                        </Link>
+
                         <div style={{ color: currentMagnitudeColor, marginLeft: 8 }}>{item.magnitude.toFixed(1)}</div>
                     </div>
                 )
