@@ -1,4 +1,4 @@
-import "detailContent.css";
+import "./detailContent.css";
 
 import EarthquakeDetail from "./eathquakeDetail";
 
