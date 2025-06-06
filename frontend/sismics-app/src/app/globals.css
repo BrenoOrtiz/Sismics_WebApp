@@ -7,6 +7,8 @@
   --text: #F1FAEE;
   --text-secondary: #c6c8c5;
   --border: #2e3138;
+  --border-accent: hsl(357, 15%, 25%);
+  --background-accent: hsl(354, 15%, 13%);
 }
 
 html{
