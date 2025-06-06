@@ -4,12 +4,8 @@ import axios from "axios"
 
 import "./mainContent.css"
 import SearchBar from "./searchBar"
-import dynamic from 'next/dynamic';
-
+import GlobeComponent from "./globe";
 import { useState, useEffect } from "react";
-
-const GlobeComponent = dynamic(() => import("./globe"), { ssr: false });
-
 
 
 export default function MainContent() {
