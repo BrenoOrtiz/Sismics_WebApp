@@ -1,0 +1,130 @@
+.radius-data-container{
+    width: 80%;
+    margin-top: 3rem;
+}
+
+.radius-title{
+    font-size: 34px;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.radius-description {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.radius-controls{
+    margin-bottom: 2.5rem;
+
+}
+
+.radius-label{
+    font-size: 18px;
+    color: var(--text);
+    margin-right: 10px;
+}
+
+.radius-input{
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 8px;
+    background-color: transparent;
+    color: var(--text);
+}
+
+.radius-input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+
+.tableContainer {
+  width: 100%;
+  max-height: 500px;
+  overflow: auto;
+  border-radius: 8px;
+  background-color: var(--primary);
+  border: 1px solid var(--border);
+  margin-bottom: 2rem;
+
+}
+
+.earthquakeTable {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text);
+  
+}
+
+.earthquakeTable th,
+.earthquakeTable td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.earthquakeTable th {
+  background-color: var(--primary-400);
+  color: var(--text-secondary);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.earthquakeTable tbody tr {
+  height: 60px;  
+  background-color: var(--primary);
+  transition: background-color 0.2s ease;
+}
+
+.earthquakeTable tbody tr:hover {
+  background-color: var(--primary-300);
+}
+
+.magnitude {
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+.alert {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.alert-green {
+  background-color: #28a745;
+  color: white;
+}
+
+.alert-yellow {
+  background-color: #ffc107;
+  color: var(--primary);
+}
+
+.alert-orange {
+  background-color: #fd7e14;
+  color: white;
+}
+
+.alert-red {
+  background-color: var(--accent);
+  color: white;
+}
+
+.alert-none {
+  background-color: var(--primary-300);
+  color: var(--text-secondary);
+}
+
+.noData {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-secondary);
+  background-color: var(--primary-400);
+  border-radius: 0 0 8px 8px;
+}
