@@ -1,6 +1,7 @@
 import "./detailContent.css";
 
-import EarthquakeDetail from "./eathquakeDetail";
+import EarthquakeDetail from "./earthquakeDetail";
+import RadiusData from "./radiusData";
 
 export default function DetailContent({data}) { 
 
