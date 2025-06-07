@@ -28,6 +28,11 @@ https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson
 https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=ID
 ```
 
+## Consultar terremoto em raio de certo local:
+```GET
+https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&latitude=&longitude=&maxradiuskm=
+```
+
 ## Clonando o Repositório
 
 Para clonar este repositório para a sua máquina local, utilize o seguinte comando:
