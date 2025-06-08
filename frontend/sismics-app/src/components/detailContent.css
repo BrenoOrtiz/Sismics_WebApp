@@ -1,4 +1,6 @@
 .detail-content-container{
+    margin-top: 81px;
+    margin-left: 247px;
     width: 100%;
     display: flex;
     flex-direction: column;
