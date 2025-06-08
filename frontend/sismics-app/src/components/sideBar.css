@@ -1,5 +1,8 @@
 
 .sidebarContainer {
+  
+  position: fixed;
+  top: 81px;
   display: flex;
   flex-direction: column;
   width: 210px;
