@@ -70,8 +70,8 @@ export default function RadiusData({ location}) {
 
     return (
         <div className="radius-data-container">
-            <h2 className="radius-title">Dados de Raio</h2>
-            <p className="radius-description">Selecione o raio para visualizar os dados sísmicos ao redor do ponto selecionado.</p>
+            <h2 className="radius-title">Terremotos próximos</h2>
+            <p className="radius-description">Selecione o raio para visualizar os dados sísmicos.</p>
             <div className="radius-controls">
                 <label htmlFor="radius-input" className="radius-label">Raio (km):</label>
                 <input
