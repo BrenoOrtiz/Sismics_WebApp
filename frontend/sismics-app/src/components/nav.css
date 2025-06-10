@@ -1,5 +1,6 @@
 .navContainer{
     position: fixed;
+    top: 0;
     background-color: var(--primary);
     display: flex;
     width: 100%;
