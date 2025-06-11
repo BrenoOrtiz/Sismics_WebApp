@@ -4,6 +4,7 @@ import "./statsContent.css"
 
 import FilterDate from "./filterDate"
 import StatsCard from "./statsCard"
+import DataGraph from "./dataGraph"
 
 export default function StatsContent() {
 
@@ -30,6 +31,7 @@ export default function StatsContent() {
                     value="10 km"
                     description="Profundidade média dos sismos registrados."
                 />
+                <DataGraph/>
             </div>
         </div>
     )
