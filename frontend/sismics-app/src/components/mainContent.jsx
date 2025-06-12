@@ -48,7 +48,7 @@ export default function MainContent() {
     
     return (
         <div className="mainContentContainer">
-            <h1 className="title">Abalos sísmicos últimos 30 dias</h1>
+            <h1 className="title">Abalos sísmicos</h1>
             <p className="description">Acompanhe em tempo real os abalos sísmicos ao redor do mundo.</p>
             {loading ? (
                 <p>Loading map and seismic data...</p> 
