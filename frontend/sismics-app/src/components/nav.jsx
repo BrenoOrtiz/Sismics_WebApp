@@ -16,13 +16,13 @@ export default function NavBar() {
                     <div className="navLinks">
                         <a href="/">Home</a>
                         <a href="/stats">Estatísticas</a>
-                        <a href="/logout"><i className="fa-solid fa-right-from-bracket fa-xl" style={{color: "#e05252"}}></i></a>
+                        <a href="/logout"><span className="fa-solid fa-right-from-bracket fa-xl" style={{color: "#e05252"}}></span></a>
                     </div>
                 ) : (
                     <div className="navLinks">
                         <a href="/">Home</a>
                         <a href="/pricing" >Assinaturas</a>
-                        <a href="/auth"><i className="fa-solid fa-right-to-bracket fa-xl" style={{color: "#e05252"}}></i></a>
+                        <a href="/auth"><span className="fa-solid fa-right-to-bracket fa-xl" style={{color: "#e05252"}}></span></a>
                     </div>
                 ) }
                 
