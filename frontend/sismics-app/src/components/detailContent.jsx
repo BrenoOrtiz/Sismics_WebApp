@@ -1,3 +1,5 @@
+"use client"
+
 import "./detailContent.css";
 
 import EarthquakeDetail from "./earthquakeDetail";
