@@ -16,29 +16,15 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-const chartData = [
-  { month: "January", desktop: 186 },
-  { month: "February", desktop: 305 },
-  { month: "March", desktop: 237 },
-  { month: "April", desktop: 73 },
-  { month: "May", desktop: 209 },
-  { month: "June", desktop: 214 },
-]
 
-const chartConfig = {
-  desktop: {
-    label: "Desktop",
-    color: "hsl(var(--chart-1))",
-  },
-}
 
-export default function DataGraph() {
+export default function DataGraph({title, description, chartData, chartConfig, xAxis }) {
   return (
-    <Card className="col-start-1 col-end-4 p-[0.8rem]">
+    <Card className="col-span-2 p-[0.8rem]">
       <CardHeader className="mb-[.8rem]">
-        <CardTitle className="text-[var(--text)] mb-[0.4rem]">Area Chart - Gradient</CardTitle>
+        <CardTitle className="text-[var(--text)] mb-[0.4rem]">{title}</CardTitle>
         <CardDescription className="text-[var(--text-secondary)]">
-          Showing total visitors for the last 6 months
+          {description}
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -53,15 +39,15 @@ export default function DataGraph() {
           >
             <CartesianGrid vertical={false} />
             <XAxis
-              dataKey="month"
+              dataKey="date"
               tickLine={false}
               axisLine={false}
               tickMargin={8}
               tickFormatter={(value) => value.slice(0, 3)}
             />
-            <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
+            <ChartTooltip cursor={true} content={<ChartTooltipContent />} className="bg-[#2e3138] p-[4px] text-accent border-border" />
             <defs>
-              <linearGradient id="fillDesktop" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="fillData" x1="0" y1="0" x2="0" y2="1">
                 <stop
                   offset="5%"
                   stopColor="var(--accent)"
@@ -75,9 +61,9 @@ export default function DataGraph() {
               </linearGradient>
             </defs>
             <Area
-              dataKey="desktop"
+              dataKey={xAxis}
               type="natural"
-              fill="url(#fillDesktop)"
+              fill="url(#fillData)"
               fillOpacity={0.4}
               stroke="var(--accent)"
               stackId="a"
