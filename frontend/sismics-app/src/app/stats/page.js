@@ -1,3 +1,4 @@
+"use client";
 
 import NavBar from "@/components/nav"
 import StatsContent from "@/components/statsContent"
@@ -12,3 +13,4 @@ export default function StatsPage() {
         </div>
     )
 }
+
