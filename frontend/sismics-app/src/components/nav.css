@@ -40,5 +40,5 @@
 }
 
 .navLinks a:hover{
-    color: var(--border-accent);
+    color: var(--accent);
 }
