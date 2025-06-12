@@ -72,7 +72,7 @@ export default function Pricing() {
                                     tier.featured ? "featured" : ""
                                 }`}
                             >
-                                /month
+                                
                             </span>
                         </p>
                         <p
