@@ -22,7 +22,7 @@ export default function NavBar() {
                     <div className="navLinks">
                         <a href="/">Home</a>
                         <a href="/pricing" >Assinaturas</a>
-                        <a href="/auth"><span className="fa-solid fa-right-to-bracket fa-xl" style={{color: "#e05252"}}></span></a>
+                        <a href="/auth"><span suppressHydrationWarning className="fa-solid fa-right-to-bracket fa-xl" style={{color: "#e05252"}}></span></a>
                     </div>
                 ) }
                 
