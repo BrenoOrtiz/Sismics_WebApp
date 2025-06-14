@@ -1,3 +1,5 @@
+"use client"
+
 import "./sideBar.css"
 import SideBarData from "../components/SideBarData"
 import SearchBarSide from "./searchBarSide"
