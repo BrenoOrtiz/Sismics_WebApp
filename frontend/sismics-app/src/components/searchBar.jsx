@@ -1,3 +1,5 @@
+"use client";
+
 import "./searchBar.css";
 import { useState } from 'react';
 
